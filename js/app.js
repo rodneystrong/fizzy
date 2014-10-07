@@ -5,14 +5,27 @@ var thePlace = $('#the-numbers');
 //thePlace.append('hello');
 
 //create the variable that will house the numbers
-var theNumbers = 0;
+var theNumber = 0;
+//console.log(theNumber);
 
 //create a function that will print out 1 to 100
-function printNumbers(theNumbers) {
-	for(i=0;i<=100;i++){
-		theNumbers++;
-		//console.log(theNumbers);
-		thePlace.append(theNumbers);
+function printNumbers() {
+	for(i=0; i<100; i++){
+		theNumber++;
+		//unit test
+		//console.log(theNumber);
+		//unit test
+		//thePlace.append(theNumber + '<br/>');
+		if(theNumber % 3 == 0 && theNumber % 5 == 0){
+			thePlace.append("fizz buzz" + "<br/>");
+		} else if(theNumber % 3 == 0) {
+			thePlace.append("fizz" + "<br/>");
+		} else if(theNumber % 5 == 0) {
+			thePlace.append("buzz" + "<br/>");
+		} else {
+			thePlace.append(theNumber +"<br/>");
+		}
+
 	}
 }
 
