@@ -17,11 +17,11 @@ function printNumbers() {
 		//unit test
 		//thePlace.append(theNumber + '<br/>');
 		if(theNumber % 3 == 0 && theNumber % 5 == 0){
-			thePlace.append("fizz buzz" + "<br/>");
+			thePlace.append('<span class="orange">fizz buzz</span>' + '<br/>');
 		} else if(theNumber % 3 == 0) {
-			thePlace.append("fizz" + "<br/>");
+			thePlace.append('<span class="red">fizz</span>' + "<br/>");
 		} else if(theNumber % 5 == 0) {
-			thePlace.append("buzz" + "<br/>");
+			thePlace.append('<span class="blue">buzz' + "<br/>");
 		} else {
 			thePlace.append(theNumber +"<br/>");
 		}
