@@ -17,17 +17,24 @@ function printNumbers() {
 		//unit test
 		//thePlace.append(theNumber + '<br/>');
 		if(theNumber % 3 == 0 && theNumber % 5 == 0){
-			thePlace.append('<div class="space orange">fizz buzz</div>');
+			thePlace.append('<li class="space">fizz buzz</li>');
 		} else if(theNumber % 3 == 0) {
-			thePlace.append('<div class="space red">fizz</div>');
+			thePlace.append('<li class="space">fizz</li>');
 		} else if(theNumber % 5 == 0) {
-			thePlace.append('<div class="space blue">buzz');
+			thePlace.append('<li class="space">buzz');
 		} else {
-			thePlace.append('<div class="space">' + theNumber + "</div>");
+			thePlace.append('<li class="space">' + theNumber + "</li>");
 		}
-
 	}
 }
 
 //call the printNumbers function
 printNumbers();
+
+/*
+	Description:
+	Returns a reference to the element by its ID.
+
+	Syntax:
+	element = document.getElementById(id);
+*/
