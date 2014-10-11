@@ -17,13 +17,13 @@ function printNumbers() {
 		//unit test
 		//thePlace.append(theNumber + '<br/>');
 		if(theNumber % 3 == 0 && theNumber % 5 == 0){
-			thePlace.append('<span class="orange">fizz buzz</span>' + '<br/>');
+			thePlace.append('<div class="space orange">fizz buzz</div>');
 		} else if(theNumber % 3 == 0) {
-			thePlace.append('<span class="red">fizz</span>' + "<br/>");
+			thePlace.append('<div class="space red">fizz</div>');
 		} else if(theNumber % 5 == 0) {
-			thePlace.append('<span class="blue">buzz' + "<br/>");
+			thePlace.append('<div class="space blue">buzz');
 		} else {
-			thePlace.append(theNumber +"<br/>");
+			thePlace.append('<div class="space">' + theNumber + "</div>");
 		}
 
 	}
