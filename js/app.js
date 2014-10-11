@@ -42,18 +42,22 @@ function printNumber(){
 	var fizz = document.createTextNode('fizz');
 	var buzz = document.createTextNode('buzz');
 	var fizzBuzz = document.createTextNode('fizzbuzz');
+	var theFizz = theLi.appendChild(fizz);
+	var theBuzz = theLi.appendChild(buzz);
+	var theFizzBuzz = theLi.appendChild(fizzBuzz);
 
 	for(i=0; i<100; i++){
 		theNumber++;
 		if(theNumber % 3 == 0 && theNumber % 5 == 0){
-			thePlace.innerHTML = theLi.appendChild(fizzBuzz);
+			thePlace.appendChild(fizzBuzz);
 		} else if(theNumber % 3 == 0) {
-			thePlace.innerHTML = theLi.appendChild(fizz);
+			thePlace.appendChild(fizz);
 		} else if(theNumber % 5 == 0) {
-			thePlace.innerHTML = theLi.appendChild(buzz);
-		} //else {
-			//thePlace.innerHTML = theLi.appendChild(theNumber);
-		//}
+			thePlace.appendChild(buzz);
+		} 
+		// else {
+		// 	thePlace.appendChild(theNumber);
+		// }
 	}
 }
 
