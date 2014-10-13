@@ -39,9 +39,11 @@ var theNumber = 0;
 
 function printNumber(){
 	var theLi = document.createElement('li');
+
 	var fizz = document.createTextNode('fizz');
 	var buzz = document.createTextNode('buzz');
 	var fizzBuzz = document.createTextNode('fizzbuzz');
+	
 	var theFizz = theLi.appendChild(fizz);
 	var theBuzz = theLi.appendChild(buzz);
 	var theFizzBuzz = theLi.appendChild(fizzBuzz);
