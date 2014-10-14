@@ -39,9 +39,10 @@ var theButton = document.getElementById('theButton');
 
 function printNumber(){
 
-	var fizz = document.createTextNode('fizz');
-	var buzz = document.createTextNode('buzz');
-	var fizzBuzz = document.createTextNode('fizzbuzz');
+	//this shit didn't work
+	// var fizz = document.createTextNode('fizz');
+	// var buzz = document.createTextNode('buzz');
+	// var fizzBuzz = document.createTextNode('fizzbuzz');
 
 	//removing these as unnecessary for now
 	// var theFizz = theLi.appendChild(fizz);
