@@ -35,27 +35,24 @@
 /*Javascript only version*/
 var thePlace = document.getElementById('the-numbers');
 
-var theNumber = 0;
-
 function printNumber(){
 	var theLi = document.createElement('li');
 
 	var fizz = document.createTextNode('fizz');
 	var buzz = document.createTextNode('buzz');
 	var fizzBuzz = document.createTextNode('fizzbuzz');
-	
+
 	var theFizz = theLi.appendChild(fizz);
 	var theBuzz = theLi.appendChild(buzz);
 	var theFizzBuzz = theLi.appendChild(fizzBuzz);
 
 	for(i=0; i<100; i++){
-		theNumber++;
 		if(theNumber % 3 == 0 && theNumber % 5 == 0){
-			thePlace.appendChild(fizzBuzz);
+			thePlace.innerHTML = "<li>fizzbuzz</li>";
 		} else if(theNumber % 3 == 0) {
-			thePlace.appendChild(fizz);
+			thePlace.innerHTML = "<li>fizz</li>";
 		} else if(theNumber % 5 == 0) {
-			thePlace.appendChild(buzz);
+			thePlace.innerHTML = "<li>buzz</li>";
 		} 
 		// else {
 		// 	thePlace.appendChild(theNumber);
